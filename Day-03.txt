@@ -1,0 +1,62 @@
+Day 3
+
+1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+var object = [
+  { name: "Mohan", age: 2, company: "Guvi" },
+  { name: "Rohan", age: 3, company: "Guvi Geeks" },
+  { name: "Raju", age: 4, company: "Guvi Geek Network" },
+];
+
+Code:
+// for loop
+for (let i = 0; i < object.length; i++) {
+  console.log(`
+  Name: ${object[i].name}
+  Age: ${object[i].age}
+  Company: ${object[i].company}
+  `);
+}
+
+// forEach loop
+object.forEach((item) => {
+  console.log(`
+  Name: ${item.name}
+  Age: ${item.age}
+  Company: ${item.company}
+  `);
+});
+
+// for in loop
+for (let index in object) {
+  console.log(`
+  Name: ${object[index].name}
+  Age: ${object[index].age}
+  Company: ${object[index].company}
+  `);
+}
+
+// for of loop
+for (let index of object) {
+  console.log(`
+  Name: ${index.name}
+  Age: ${index.age}
+  Company: ${index.company}
+  `);
+}
+
+2. Create your own resume data in JSON format
+
+var resume = [
+  {
+    Name: "Bharath M",
+    Sex: "Male",
+    DOB: "29 Nov 2002",
+    MailID: "bharathmvg@gmail.com",
+    ContactNo: 9916336608,
+    EducationQualification: "2nd PUC",
+    School: "Krupanidhi Pre University College",
+    Percentage: 91.3,
+    Hobbies: "Cycling",
+    Languages: ["Tamil", "Kannada", "English"],
+  },
+];
